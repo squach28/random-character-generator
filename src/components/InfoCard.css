@@ -1,0 +1,9 @@
+.info-card {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin: auto;
+    left: 50%;
+    top: 50%;
+}

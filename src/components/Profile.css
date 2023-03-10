@@ -1,0 +1,57 @@
+.profile-grid {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    background-color: #36558f;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 1em auto;
+    color: white;
+    box-shadow: 0 3px 1px #0c131f;
+    max-width: 500px;
+    max-height: 700px;
+    grid-gap: 1em;
+    margin: 0 1em;
+    align-items: start;
+    
+}
+h1, h2, p, ul, li {
+    margin: 0;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+.character-image {
+    display: grid;
+    border-radius: 50%;
+    border: 0.2em solid white;
+}
+
+.character-name {
+    align-self: center;
+    text-align: center;
+}
+
+.tel-city-container {
+    grid-column: span 2;
+}
+
+.hobbies-list {
+    list-style-position: outside;
+}
+
+ul.hobbies-list > li::marker {
+    position: relative;
+    content: "💖";
+}
+
+ul.dislikes-list > li::marker {
+    position: relative;
+    content: "❌";
+}
+
+
+li {
+    text-indent: 0.25em;
+}

@@ -1,0 +1,19 @@
+header {
+    background-color: #d4e4bc;
+    box-shadow: 0 5px 1px rgba(0,0,0,0.5);
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+}
