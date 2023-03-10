@@ -13,18 +13,19 @@ button {
     color: white;
     font-weight: bold;
     cursor: pointer;
-    max-width: 700px;
+    max-width: 500px;
     margin: 0 1em;
     font-size: 1.2rem;
 }
 
 .button-container {
-    max-width: 500px;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 1em;
+    margin: 1em auto 0 auto;
     gap: 1em;
+    flex: 1;
 }
 
 .saved-characters-header {
@@ -32,8 +33,21 @@ button {
     margin: 2em 0 1em 1em;
 }
 
+.no-saved-characters-text {
+    margin: 2em 0 1em 1em;
+}
+
 .saved-characters-container {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    margin-bottom: 2em;
+}
+
+@media (min-width: 500px) {
+    .saved-characters-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-gap: 2em;
+    }
 }

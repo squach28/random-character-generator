@@ -102,8 +102,8 @@ function App() {
     <div className="App">
       {showInfo && <InfoCard />}
       <Header showInfoCard={toggleInfoCard}/>
-      {character && <Profile character={character}/>}
       <div className="button-container">
+        {character && <Profile character={character}/>}
         <button onClick={rerollCharacter}>Reroll</button>
         <button onClick={saveCharacter}>Save</button>
       </div> 
@@ -111,7 +111,7 @@ function App() {
       <div className="saved-characters-container">
         {savedCharacters.length > 0 ? savedCharacters.map(
           savedCharacter => <SavedCharacter key={savedCharacter.id.value} character={savedCharacter} deleteCharacter={() => deleteCharacter(savedCharacter.id.value)}/>)
-          : <p>You don't have any saved characters :(</p>
+          : <p className="no-saved-characters-text">You don't have any saved characters :(</p>
         }
       </div>
     </div>
